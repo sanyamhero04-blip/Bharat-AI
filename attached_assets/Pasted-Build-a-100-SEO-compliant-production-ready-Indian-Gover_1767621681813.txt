@@ -1,0 +1,182 @@
+Build a 100% SEO-compliant, production-ready Indian Government Form Auto-Filler website that scores near-perfect on SEO audit tools (AIOSEO, Lighthouse, Search Console).
+
+🔥 CORE GOAL
+
+Create a server-rendered (SSR) website that helps Indian users correctly fill PAN, Aadhaar, and Government forms by generating accurate, government-style filled previews and copyable field values.
+
+This website must be:
+
+Fully crawlable by Google (NO JS-only content)
+
+Error-free in SEO audits
+
+Safe for AdSense
+
+⚙️ TECH (MANDATORY – NO DEVIATION)
+
+Framework: Next.js (App Router)
+
+Rendering: Server-Side Rendering (SSR)
+
+Styling: Tailwind CSS
+
+Pages must return real HTML content (not empty shell)
+
+No hydration errors
+
+No console errors
+
+🧱 SEO REQUIREMENTS (CRITICAL)
+HTML STRUCTURE (MUST EXIST IN RAW HTML)
+
+Exactly ONE <h1>
+
+At least 4 <h2>
+
+Optional <h3> where needed
+
+META TAGS
+
+<title> (55–60 chars, keyword included)
+
+<meta name="description"> (140–160 chars, keyword included)
+
+<link rel="canonical">
+
+OPEN GRAPH
+
+og:title
+
+og:description
+
+og:type
+
+og:url
+
+SCHEMA (JSON-LD – REQUIRED)
+
+FAQPage schema
+
+SoftwareApplication schema
+
+🎯 PRIMARY KEYWORDS (USE NATURALLY)
+
+pan form filling online
+
+aadhaar form filling help
+
+indian government form auto filler
+
+pan correction form filled example
+
+aadhaar update form sample
+
+🧠 PAGE CONTENT (STRICT ORDER)
+H1
+
+PAN & Aadhaar Form Filling Online – Indian Government Auto-Filler
+
+INTRO (2–3 paragraphs)
+
+Explain Indian govt form pain
+
+Mention PAN, Aadhaar, scholarship forms
+
+Simple Indian English
+
+TOOL UI
+
+Inputs:
+
+Full Name
+
+Father’s Name
+
+DOB (DD/MM/YYYY)
+
+Gender
+
+PAN (AAAAA1234A validation)
+
+Aadhaar (12 digits, masked)
+
+Address split into:
+
+House / Flat
+
+Area / Locality
+
+City / Village
+
+District
+
+State (India only dropdown)
+
+PIN Code (6-digit validation + state match)
+
+Outputs:
+
+Government-style filled preview
+
+Copy buttons per field
+
+Sample PDF preview (educational)
+
+H2 – How This Tool Works
+
+3 clear steps
+
+H2 – Common Mistakes While Filling PAN & Aadhaar Forms
+
+(Very important for featured snippets)
+
+H2 – FAQs
+
+Include at least 6 FAQs using real search queries like:
+
+How to fill PAN correction form online?
+
+Why PAN forms get rejected?
+
+How to write address in Aadhaar form?
+
+🌐 LANGUAGES
+
+English (default)
+
+Hindi toggle (manual translation)
+
+Include Hindi keywords like:
+
+पैन कार्ड फॉर्म कैसे भरें
+
+आधार कार्ड फॉर्म उदाहरण
+
+🔐 LEGAL & TRUST
+
+Disclaimer visible:
+“This is not an official government website. This tool does not submit any form.”
+
+No data stored
+
+No auto-submission
+
+🧩 INTERNAL LINKS (AVOID SEO ERRORS)
+
+Add internal anchor links to:
+
+#how-it-works
+
+#common-mistakes
+
+#faqs
+
+🚫 STRICT RULES
+
+❌ No missing H1
+❌ No empty HTML
+❌ No keyword stuffing
+❌ No fake claims
+❌ No JS-only rendering
+
+Build this as a clean, scalable, high-trust Indian utility website designed to rank for long-tail government form keywords and pass all major SEO audits.
