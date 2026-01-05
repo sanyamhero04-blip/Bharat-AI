@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { FormPreview } from "./form-preview";
+import { FormPreview } from "@/components/form-preview";
 import { useState } from "react";
 import { CheckCircle2, RotateCcw } from "lucide-react";
 
