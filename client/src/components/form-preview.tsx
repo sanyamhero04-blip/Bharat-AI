@@ -66,15 +66,27 @@ export function FormPreview({ data }: { data: FormData }) {
         <div className="border-b-2 border-black pb-4 mb-6 text-center">
           <h2 className="text-xl font-bold uppercase text-black">Form No. 49A</h2>
           <p className="text-xs font-semibold text-gray-600">Application for Allotment of Permanent Account Number</p>
+          <div className="mt-2 flex justify-center gap-8 text-[10px] font-bold uppercase">
+            <span>(See Rule 114)</span>
+            <span>Only for Indian Citizens</span>
+          </div>
         </div>
 
-        <FieldRow label="Full Name" value={data.fullName} copyKey="fullName" />
-        <FieldRow label="Father's Name" value={data.fatherName} copyKey="fatherName" />
+        <div className="mb-6 p-2 border border-black bg-gray-50 text-[10px] leading-tight">
+          Assessing Officer (AO code): <span className="border-b border-black inline-block w-20 h-3"></span>
+          Area Code: <span className="border-b border-black inline-block w-12 h-3 mx-2"></span>
+          AO Type: <span className="border-b border-black inline-block w-10 h-3 mx-2"></span>
+          Range Code: <span className="border-b border-black inline-block w-12 h-3 mx-2"></span>
+          AO No: <span className="border-b border-black inline-block w-10 h-3 mx-2"></span>
+        </div>
+
+        <FieldRow label="1. Full Name (Please refer to instructions)" value={data.fullName} copyKey="fullName" />
+        <FieldRow label="2. Father's Name" value={data.fatherName} copyKey="fatherName" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <FieldRow label="Date of Birth" value={data.dob.replace(/\//g, '')} copyKey="dob" />
+          <FieldRow label="3. Date of Birth" value={data.dob.replace(/\//g, '')} copyKey="dob" />
           <div className="mb-4">
-            <span className="text-xs uppercase font-bold text-gray-600 block mb-1">Gender</span>
+            <span className="text-xs uppercase font-bold text-gray-600 block mb-1">4. Gender</span>
             <div className="flex gap-4">
               <div className="flex items-center gap-2 border border-black px-2 py-1 bg-white">
                 <div className={`w-4 h-4 border border-black rounded-full flex items-center justify-center ${data.gender === 'male' ? 'bg-black' : ''}`}>
@@ -93,12 +105,12 @@ export function FormPreview({ data }: { data: FormData }) {
         </div>
 
         <div className="my-4 border-t border-dashed border-gray-400 pt-4">
-           <FieldRow label="PAN Number" value={data.pan} copyKey="pan" />
-           <FieldRow label="Aadhaar Number" value={`XXXXXXXX${data.aadhaar.slice(-4)}`} copyKey="aadhaar" />
+           <FieldRow label="5. PAN Number (If already allotted)" value={data.pan} copyKey="pan" />
+           <FieldRow label="6. Aadhaar Number (12 digits)" value={`XXXXXXXX${data.aadhaar.slice(-4)}`} copyKey="aadhaar" />
         </div>
 
         <div className="my-4 border-t border-dashed border-gray-400 pt-4">
-          <h3 className="font-bold text-sm mb-2 text-black uppercase underline">Address for Communication</h3>
+          <h3 className="font-bold text-sm mb-2 text-black uppercase underline">7. Address for Communication</h3>
           <FieldRow label="Flat / Door / Block No." value={data.houseNo} copyKey="houseNo" />
           <FieldRow label="Road / Street / Locality" value={data.area} copyKey="area" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -106,13 +118,22 @@ export function FormPreview({ data }: { data: FormData }) {
              <FieldRow label="District" value={data.district} copyKey="district" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-             <FieldRow label="State" value={data.state} copyKey="state" />
+             <FieldRow label="State / Union Territory" value={data.state} copyKey="state" />
              <FieldRow label="PIN Code" value={data.pincode} copyKey="pincode" />
           </div>
         </div>
 
+        <div className="mt-6 pt-4 border-t-2 border-black flex justify-between items-end">
+          <div className="text-[10px] font-bold max-w-[200px]">
+            I/We, the applicant, in the capacity of ________________ have declared that what is stated above is true.
+          </div>
+          <div className="border-2 border-black w-40 h-16 flex items-center justify-center text-[10px] font-bold text-gray-400">
+            SIGNATURE / LEFT THUMB IMPRESSION
+          </div>
+        </div>
+
         <div className="bg-yellow-50 border border-yellow-200 p-4 mt-6 rounded text-xs text-yellow-800">
-          <strong>Note:</strong> This is a generated preview to help you verify your details before filling the actual government form. Do not print and submit this page.
+          <strong>Note:</strong> This preview is researched based on <strong>Form 49A (Rule 114)</strong> of the Income Tax Department. It uses the official block-letter grid system to ensure your data fits perfectly.
         </div>
       </div>
     </div>
